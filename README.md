@@ -1,4 +1,4 @@
-# Autonomous Open Source Contributor Agent
+# AI GitHub Contributor Automation Agent
 
 An AI agent project with backend + UI that ingests real GitHub issues for AI topics and helps you choose what to work on next.
 
@@ -14,13 +14,13 @@ An AI agent project with backend + UI that ingests real GitHub issues for AI top
 Build:
 
 ```bash
-docker build -t github-contributor-agent .
+docker build -t ai-github-contributor-automation-agent .
 ```
 
 Run:
 
 ```bash
-docker run --rm -p 8000:8000 github-contributor-agent
+docker run --rm -p 8000:8000 ai-github-contributor-automation-agent
 ```
 
 Open:

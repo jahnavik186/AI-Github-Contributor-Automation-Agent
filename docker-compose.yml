@@ -3,7 +3,7 @@
     build:
       context: .
       dockerfile: Dockerfile
-    image: ai-agent-runtime:latest
+    image: ai-github-contributor-automation-agent:latest
     ports:
       - "8000:8000"
     environment:

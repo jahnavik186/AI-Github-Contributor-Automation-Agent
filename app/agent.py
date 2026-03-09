@@ -204,7 +204,7 @@ def _github_get_json(path: str, query: dict[str, str | int] | None = None) -> di
     headers = {
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28",
-        "User-Agent": "ai-agent-runtime",
+        "User-Agent": "ai-github-contributor-automation-agent",
     }
     if token:
         headers["Authorization"] = f"Bearer {token}"
@@ -677,7 +677,7 @@ def generate_pr(repo: str, fixes: List[FixProposal], issues: List[IssueCandidate
         title=f"feat(agent): autonomous maintenance updates for {repo}",
         body=(
             "## Summary\n"
-            "This PR was drafted by the Autonomous Open Source Contributor Agent.\n\n"
+            "This PR was drafted by the AI GitHub Contributor Automation Agent.\n\n"
             "## Proposed Fixes\n"
             f"{bullet_lines}\n\n"
             "## Validation\n"

@@ -15,7 +15,7 @@ from app.agent import (
 from app.schemas import AnalyzeRequest, DiscoverRequest, IssuePlanRequest
 
 app = FastAPI(
-    title="Autonomous Open Source Contributor Agent",
+    title="AI GitHub Contributor Automation Agent",
     version="1.0.0",
     description="Detect issues, propose fixes, generate PR drafts, and update docs for open-source repositories.",
 )
@@ -30,7 +30,7 @@ def home() -> FileResponse:
 
 @app.get("/health")
 def health() -> dict:
-    return {"status": "ok", "service": "github-contributor-agent"}
+    return {"status": "ok", "service": "ai-github-contributor-automation-agent"}
 
 
 @app.post("/api/analyze")

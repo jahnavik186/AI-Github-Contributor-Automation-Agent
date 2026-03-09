@@ -5,7 +5,7 @@ from typing import Callable
 
 from fastapi import Request, Response
 
-logger = logging.getLogger("ai-agent-runtime")
+logger = logging.getLogger("ai-github-contributor-automation-agent")
 
 
 def setup_logging(level: str) -> None:
