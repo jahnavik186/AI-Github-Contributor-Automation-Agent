@@ -1,0 +1,123 @@
+﻿:root {
+  --bg: #f4f8ff;
+  --bg-accent: #deecff;
+  --surface: #ffffff;
+  --text: #132238;
+  --muted: #50647a;
+  --brand: #006b8f;
+  --brand-2: #00a0a8;
+  --line: #d7e3f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Aptos", "Trebuchet MS", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 20% 0%, var(--bg-accent), var(--bg));
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.hero {
+  padding: 1.5rem;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--brand);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 10px 24px rgba(0, 51, 89, 0.08);
+}
+
+.controls {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+label {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.6rem 0.7rem;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.6rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(120deg, var(--brand), var(--brand-2));
+  color: white;
+}
+
+button.secondary {
+  background: #eaf2fc;
+  color: var(--text);
+}
+
+.result pre {
+  margin: 0;
+  white-space: pre-wrap;
+  background: #0f1e30;
+  color: #e9f5ff;
+  border-radius: 12px;
+  padding: 1rem;
+  max-height: 420px;
+  overflow: auto;
+}
+

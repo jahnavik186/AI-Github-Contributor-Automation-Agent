@@ -1,0 +1,15 @@
+﻿services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ai-agent-runtime:latest
+    ports:
+      - "8000:8000"
+    environment:
+      APP_ENV: production
+      APP_VERSION: 2.0.0
+      LOG_LEVEL: info
+      ALLOWED_ORIGINS: "*"
+    restart: unless-stopped
+

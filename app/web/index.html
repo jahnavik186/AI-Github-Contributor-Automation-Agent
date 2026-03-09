@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Agent Runtime</title>
+    <link rel="stylesheet" href="/web/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <p class="kicker">Production AI Workflow Runtime</p>
+        <h1>Ship domain AI agents with confidence</h1>
+        <p class="subtitle">
+          Run realistic support, healthcare, IT, and enterprise workflows from a single runtime API.
+        </p>
+      </section>
+
+      <section class="panel">
+        <div class="controls">
+          <label>
+            Use case
+            <select id="useCase"></select>
+          </label>
+          <label>
+            Session ID
+            <input id="sessionId" value="demo-session" />
+          </label>
+          <label>
+            User ID
+            <input id="userId" value="demo-user" />
+          </label>
+        </div>
+
+        <label>
+          Message
+          <textarea id="message" rows="4">I was charged twice for my subscription and this is urgent.</textarea>
+        </label>
+
+        <div class="actions">
+          <button id="runBtn">Run Agent</button>
+          <button id="scenarioBtn" class="secondary">Load Scenario</button>
+        </div>
+      </section>
+
+      <section class="panel result">
+        <h2>Runtime Output</h2>
+        <pre id="output">Click "Run Agent" to execute a workflow.</pre>
+      </section>
+    </main>
+    <script src="/web/app.js"></script>
+  </body>
+</html>
+
