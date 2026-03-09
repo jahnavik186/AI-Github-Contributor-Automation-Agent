@@ -2,6 +2,9 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/jahnavik186/ai-github-contributor-automation-agent?style=for-the-badge)](https://hub.docker.com/r/jahnavik186/ai-github-contributor-automation-agent)
 [![Docker Image](https://img.shields.io/badge/docker-jahnavik186%2Fai--github--contributor--automation--agent-blue?style=for-the-badge&logo=docker)](https://hub.docker.com/r/jahnavik186/ai-github-contributor-automation-agent)
+[![GitHub Stars](https://img.shields.io/github/stars/jahnavik186/AI-Github-Contributor-Automation-Agent?style=for-the-badge)](https://github.com/jahnavik186/AI-Github-Contributor-Automation-Agent)
+[![GitHub Forks](https://img.shields.io/github/forks/jahnavik186/AI-Github-Contributor-Automation-Agent?style=for-the-badge)](https://github.com/jahnavik186/AI-Github-Contributor-Automation-Agent)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 Turn real GitHub issues into a clear execution plan in seconds.
 
