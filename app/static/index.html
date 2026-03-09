@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autonomous OSS Contributor Agent</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">Autonomous Open Source Contributor Agent</p>
+        <h1>Detect, fix, and draft PRs automatically</h1>
+        <p>
+          End-to-end workflow for open-source maintenance: issue detection, fix proposals, PR generation,
+          and documentation updates.
+        </p>
+      </section>
+
+      <section class="card controls">
+        <h2>Discover Real GitHub Issues</h2>
+        <label>
+          Interest Area
+          <input id="interestArea" value="AI" />
+        </label>
+        <label>
+          Level
+          <select id="difficulty">
+            <option value="good_first">Good First</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="hard">Hard</option>
+          </select>
+        </label>
+        <label>
+          Max Issues
+          <input id="limit" type="number" value="12" min="1" max="30" />
+        </label>
+        <div class="actions">
+          <button id="discoverBtn">Find Open Issues</button>
+        </div>
+      </section>
+
+      <section class="card output">
+        <h2>Open Issues</h2>
+        <div id="issueList" class="issue-list">
+          <p class="muted">Click "Find Open Issues" to load results.</p>
+        </div>
+      </section>
+
+      <section class="card output">
+        <h2>Selected Issue Plan</h2>
+        <div id="output" class="plan-output">
+          <p class="muted">Click an issue to see suggested changes, effort level, and file-level diff preview.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
