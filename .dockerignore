@@ -6,3 +6,13 @@ __pycache__/
 .gitignore
 Dockerfile
 README.md
+.github
+.pytest_cache
+.venv
+venv
+build
+dist
+htmlcov
+.coverage
+tests
+requirements-dev.txt
